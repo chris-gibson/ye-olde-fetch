@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './',
+  base: '/ye-olde-fetch/',
   server: {
     port: 5173,
   },
