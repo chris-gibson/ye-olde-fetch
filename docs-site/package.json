@@ -1,0 +1,22 @@
+{
+  "name": "ye-olde-fetch-docs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prebuild": "tsx scripts/extract-jsdoc.ts",
+    "predev": "tsx scripts/extract-jsdoc.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ye-olde-fetch": "file:.."
+  },
+  "devDependencies": {
+    "ts-morph": "^22.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.2.0"
+  }
+}
