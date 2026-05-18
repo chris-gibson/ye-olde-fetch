@@ -212,7 +212,7 @@ p { margin: 0.5em 0; }
 /* Forms */
 .params-form { display: flex; flex-direction: column; gap: 14px; }
 .field { display: flex; flex-direction: column; gap: 4px; }
-.field label { display: flex; align-items: baseline; gap: 12px; }
+.field label:not(.checkbox-label) { display: flex; align-items: baseline; gap: 12px; }
 .label-themed { font-weight: 600; color: var(--enamel-red); font-family: 'JetBrains Mono', monospace; font-size: 0.88em; }
 .label-native { font-size: 0.78em; color: var(--ink-soft); font-style: italic; font-family: 'JetBrains Mono', monospace; }
 .field input[type="text"],
