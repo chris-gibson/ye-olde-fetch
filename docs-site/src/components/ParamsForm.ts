@@ -25,8 +25,11 @@ export function createParamsForm(
   tomeInit: TomeInitField[],
   defaults: Partial<FormValues> = {},
 ) {
+  const defaultUrl = verb === 'postith'
+    ? 'https://jsonplaceholder.typicode.com/posts'
+    : 'https://jsonplaceholder.typicode.com/posts/1';
   const values: FormValues = {
-    url: defaults.url ?? 'https://jsonplaceholder.typicode.com/posts/1',
+    url: defaults.url ?? defaultUrl,
     missive: defaults.missive ?? (verb === 'postith' || verb === 'puttest' ? '{"title":"huzzah","body":"hark"}' : ''),
     waxSeals: defaults.waxSeals ?? (verb === 'postith' || verb === 'puttest' ? [{ key: 'Content-Type', value: 'application/json' }] : []),
     valiantAttempts: defaults.valiantAttempts ?? 1,
