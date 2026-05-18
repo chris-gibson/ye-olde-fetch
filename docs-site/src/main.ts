@@ -25,7 +25,7 @@ const sidebar = el('aside', { class: 'sidebar' }, [
   )),
   el('footer', { class: 'side-footer' }, [
     el('p', {}, ['ESM-only · Node ≥ 18']),
-    el('p', {}, [el('a', { href: 'https://github.com/' }, ['GitHub'])]),
+    el('p', {}, [el('a', { href: 'https://github.com/chris-gibson/ye-olde-fetch', target: '_blank', rel: 'noopener noreferrer' }, ['GitHub'])]),
   ]),
 ]);
 
