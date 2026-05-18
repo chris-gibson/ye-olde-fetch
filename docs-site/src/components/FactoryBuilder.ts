@@ -208,7 +208,10 @@ export function createFactoryBuilder(): HTMLElement {
           el('p', { class: 'field-help' }, ['Base delay between attempts. Doubles each retry.']),
         ]),
         el('div', { class: 'field' }, [
-          el('label', { class: 'checkbox-label' }, [towncrierCb, 'towncrier (log requests/responses)']),
+          el('label', { class: 'checkbox-label' }, [
+            towncrierCb,
+            el('span', {}, ['towncrier (log requests/responses)']),
+          ]),
         ]),
 
         el('h4', {}, ['Try a quest']),
