@@ -446,39 +446,44 @@ p { margin: 0.5em 0; }
 
 /* ─── Phone ───────────────────────────────────────────── */
 @media (max-width: 600px) {
-  body { font-size: 16px; line-height: 1.5; }
-  h2 { font-size: 1.85rem; }
-  h3 { font-size: 1.3rem; }
-  h4 { font-size: 0.95rem; }
+  body { font-size: 18px; line-height: 1.6; }
+  h2 { font-size: 2.2rem; }
+  h3 { font-size: 1.6rem; }
+  h4 { font-size: 1.05rem; }
 
-  .main { padding: 16px 12px 48px; }
-  .page-section { margin-bottom: 44px; }
+  .sigil { font-size: 1.6rem; }
+  .sidebar nav a { font-size: 1rem; padding: 8px 14px; }
+
+  .main { padding: 24px 18px 64px; }
+  .page-section { margin-bottom: 56px; }
   .method-card, .factory-builder, .error-card {
-    padding: 16px 14px;
-    border-radius: 4px;
+    padding: 22px 20px;
+    border-radius: 6px;
   }
   .method-card::before, .factory-builder::before {
-    left: 16px;
-    right: 16px;
+    left: 22px;
+    right: 22px;
   }
 
   .cors-banner {
-    font-size: 0.85em;
-    padding: 8px 12px;
-    margin-bottom: 20px;
+    font-size: 0.95em;
+    padding: 12px 14px;
+    margin-bottom: 24px;
   }
 
-  .hero .lede { font-size: 1.02rem; }
+  .hero .lede { font-size: 1.15rem; }
 
   /* Labels stack on narrow screens so the native annotation has room */
   .field label {
     flex-direction: column;
     align-items: flex-start;
     gap: 2px;
+    margin-bottom: 2px;
   }
-  .label-native { font-size: 0.74em; }
+  .label-themed { font-size: 0.95em; }
+  .label-native { font-size: 0.82em; }
 
-  /* Form inputs: 16px font-size prevents iOS Safari from zooming on focus */
+  /* Form inputs: 16px+ font-size prevents iOS Safari from zooming on focus */
   .field input[type="text"],
   .field input[type="number"],
   .field input[type="search"],
@@ -486,8 +491,9 @@ p { margin: 0.5em 0; }
   .field select,
   .glossary input[type="search"] {
     font-size: 16px;
-    padding: 9px 10px;
+    padding: 11px 12px;
   }
+  .field-help { font-size: 0.9em; }
 
   /* Seal rows stack vertically with the remove button right-aligned */
   .seal-row {
@@ -498,36 +504,38 @@ p { margin: 0.5em 0; }
     grid-column: 1 / -1;
     justify-self: end;
     width: 80px;
-    height: 32px;
+    height: 36px;
   }
 
   /* Bigger touch targets */
   .btn-primary,
   .btn-secondary,
   .btn-small {
-    padding: 10px 16px;
-    font-size: 0.98rem;
-    min-height: 40px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    min-height: 44px;
   }
-  .actions { gap: 8px; }
+  .actions { gap: 10px; }
 
-  /* Snippets and panels: smaller font, allow horizontal scroll */
-  pre { font-size: 0.78em; padding: 12px 14px; }
-  .snippet { max-height: 280px; }
+  /* Snippets and panels: comfortable code font, allow horizontal scroll */
+  pre { font-size: 0.92em; padding: 14px 16px; line-height: 1.55; }
+  .snippet { max-height: 360px; }
 
-  .badge { font-size: 0.78em; padding: 3px 8px; }
-  .tidings-viewer .panel { padding: 12px 14px; }
-  .body-area pre { max-height: 240px; }
+  .badge { font-size: 0.85em; padding: 4px 10px; }
+  .tidings-viewer .panel { padding: 14px 16px; }
+  .body-area pre { max-height: 280px; }
 
-  /* Recipe output dark panel: tighter */
-  .recipe { padding: 14px 16px; }
-  .recipe-output { padding: 10px 12px; }
+  /* Recipe cards: more breathing room */
+  .recipe { padding: 20px 20px; }
+  .recipe h4 { font-size: 1.2rem; }
+  .recipe-output { padding: 12px 14px; font-size: 0.88em; }
 
-  /* Error/glossary table: condense */
+  /* Tables: condense but stay readable */
   .glossary-table th,
   .glossary-table td {
-    padding: 8px 10px;
-    font-size: 0.85em;
+    padding: 10px 12px;
+    font-size: 0.92em;
   }
-  .glossary-table .code-cell { width: 56px; }
+  .glossary-table .code-cell { width: 64px; }
+  .members li { font-size: 1rem; padding: 8px 0; }
 }
