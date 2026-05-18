@@ -486,8 +486,9 @@ p { margin: 0.5em 0; }
   .themed-summary { font-size: 1.1rem; }
   .native-summary { font-size: 1rem; }
 
-  /* Labels stack on narrow screens so the native annotation has room */
-  .field label {
+  /* Labels stack on narrow screens so the native annotation has room
+     (but not checkbox labels — those stay inline next to the box). */
+  .field label:not(.checkbox-label) {
     flex-direction: column;
     align-items: flex-start;
     gap: 2px;
